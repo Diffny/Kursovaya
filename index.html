@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.8.2/dist/paper.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Початкова</title>
+    <style>
+      body {
+        background: url(fon.png); /* Цвет фона веб-страницы */
+      }
+      h1{
+        background-color: black;
+        color: rgb(255, 255, 255);
+      }
+      h2{
+        background-color: black;
+        color: rgb(255, 255, 255);
+      }
+    </style>
+    <script> 
+      $(document).ready(function(){
+        $("#flip").click(function(){
+          $("#panel").slideToggle("slow");
+        });
+      });
+      $(document).ready(function(){
+        $("#flip1").click(function(){
+          $("#panel1").slideToggle("slow");
+        });
+      });
+      $(document).ready(function(){
+        $("#flip2").click(function(){
+          $("#panel2").slideToggle("slow");
+        });
+      });
+      $(document).ready(function(){
+        $("#flip3").click(function(){
+          $("#panel3").slideToggle("slow");
+        });
+      });
+      $(document).ready(function(){
+        $("#flip4").click(function(){
+          $("#panel4").slideToggle("slow");
+        });
+      });
+      </script>
+      <style> 
+      #panel, #flip {
+        padding: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: left;
+        background-color: #ffffff;
+        border: solid 1px #000000;
+      }
+      #panel {
+        padding: 20px;
+        display: none;
+      }
+      #panel1, #flip1 {
+        padding: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: left;
+        background-color: #000000;
+        border: solid 1px #ffffff;
+        color: rgb(255, 255, 255);
+      }
+      #panel1 {
+        padding: 20px;
+        display: none;
+      }
+     
+      #panel2, #flip2 {
+        padding: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: left;
+        background-color: #ffffff;
+        border: solid 1px #000000;
+      }
+      #panel2 {
+        padding: 20px;
+        display: none;
+      }
+      #second{
+        color: rgb(255, 255, 255);
+      }
+      #panel3, #flip3 {
+        padding: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: left;
+        background-color: #000000;
+         color: rgb(255, 255, 255); 
+        border: solid 1px #ffffff;
+      }
+      #panel3 {
+        padding: 20px;
+        display: none;
+      }
+      #third{
+        color: rgb(255, 255, 255);
+      }
+      #panel4, #flip4 {
+        padding: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: left;
+        background-color: #ffffff;
+        /* color: rgb(255, 255, 255); */
+        border: solid 1px #000000;
+      }
+      #panel4 {
+        padding: 20px;
+        display: none;
+      }
+      </style>
+  </head>
+  <body>
+     <div class="container-fluid">
+      <h1 style="text-align: center">Теорія ігор</h1>
+      <h2 style="text-align: center">Що це таке?</h3>
+      <!--<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+        <div class="row">
+          <a href="index2.html" class="paper-btn">Загальна інформація</a>
+          <a href="index3.html" class="paper-btn">Вчені</a>
+          <a href="index4.html" class="paper-btn">Рівновага Неша </a>
+          <a href="index5.html" class="paper-btn">Цікаві завдання</a>
+          <a href="index6.html" class="paper-btn">Парадокс Монті Холла</a>
+        </div>
+      </nav>
+    </div> -->
+    <div id="flip">1. Загальна інформація &nbsp;  &nbsp; | <a  href="index2.html">ПЕРЕЙТИ</a>
+    </div>
+      <div id="panel">
+        Основні поняття теорії ігор. Що таке конфліктна сітуація, що є предметом теорії ігор та що вона досліджує.<br>
+      </div>
+       <div id="flip1">2. Вчені &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; | <a id=second href="index3.html">ПЕРЕЙТИ</a> </div> 
+      <div id="panel1">Надана інформація про трьох вчених:
+        <ul>
+          <li>Джон фон Нейман</li>
+          <li>Оскар Морґенштерн</li>
+          <li>Джон Форбс Неш</li>
+        </ul>
+      </div>
+      <div id="flip2">3.Рівновага Неша &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; | <a " href="index4.html">ПЕРЕЙТИ</a></div>
+      <div id="panel2">Загальна інформація про рівновагу Неша та приклад - задача «Дилема ув'язненого»  </div>
+      <div id="flip3">4.Цікаві завдання &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; | <a id="third" " href="index5.html">ПЕРЕЙТИ</a></div>
+      <div id="panel3"> Інформація про різновиди ігор(Кооперативні та некооперативні;Симетричні і несиметричні;З нульовою сумою
+         і з ненульовою сумою;Паралельні і послідовні)  також представлено чотири завдання на різні тематики.
+      </div>
+      <div id="flip4">5.Парадокс Монті Холла &nbsp; | <a " href="index6.html">ПЕРЕЙТИ</a></div>
+      <div id="panel4"> Загальна інформація про парадокс та просте пояснення на двох прикладах. </div>
+  </body>
+</html>
